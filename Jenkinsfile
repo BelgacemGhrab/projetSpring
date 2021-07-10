@@ -10,7 +10,7 @@ pipeline{
 
    tools {
      maven 'maven'
-     jdk 'jdk1.8.0_261'
+     jdk 'java'
    }
   stages{
     stage("Build"){
