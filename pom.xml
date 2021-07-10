@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>tn.esprit.spring</groupId>
-	<artifactId>Projet</artifactId>
+	<artifactId>projet</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Projet</name>
+	<name>projet</name>
 	<description>spring-boot-data-jpa-entity</description>
 	<properties>
 		<java.version>8</java.version>
