@@ -3,6 +3,7 @@ pipeline{
   environment {
     POM = readMavenPom(file:'pom.xml')
     ARTIFACTID=POM.getArtifactId()
+    /////////////////
     ARTIFACT_VERSION = POM.getVersion()
     DOCKER_IMAGE_VERSION = "${env.BUILD_NUMBER}"
     DOCKER_SERVICE_NAME = "${ARTIFACTID}"
