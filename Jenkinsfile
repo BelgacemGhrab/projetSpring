@@ -8,10 +8,10 @@ pipeline{
     DOCKER_SERVICE_NAME = "${ARTIFACTID}"
   }
 
-   /*tools {
+   tools {
      maven 'maven'
-     jdk 'jdk-8u131'
-   }*/
+     jdk 'jdk1.8.0_261'
+   }
   stages{
     stage("Build"){
       steps{
