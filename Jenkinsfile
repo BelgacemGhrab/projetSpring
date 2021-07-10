@@ -8,10 +8,10 @@ pipeline{
     DOCKER_SERVICE_NAME = "${ARTIFACTID}"
   }
 
-   /*tools {
+   tools {
      maven 'maven'
-     jdk 'jdk-8u131'
-   }*/
+     jdk 'java'
+   }
   stages{
     stage("Build"){
       steps{
@@ -26,7 +26,7 @@ pipeline{
     }
     stage("deploy"){
       steps{
-      bat "docker service update --fore --image ${ARTIFACTID}:${DOCKER_IMAGE_VERSION} ${ARTIFACTID}"
+      bat "docker service update --force --image ${ARTIFACTID}:${DOCKER_IMAGE_VERSION} ${ARTIFACTID}"
       }
     }
   }
